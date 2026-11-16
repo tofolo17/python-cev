@@ -1,6 +1,6 @@
 def validate_options(amount_options):
     while True:
-        option = input(f'Your option: ')
+        option = input('Your option: ')
         try:
             integer_option = int(option)
             if integer_option not in range(1, amount_options + 1):
@@ -15,7 +15,7 @@ def validate_options(amount_options):
 def validate_str(txt):
     while True:
         string_var = input(f'{txt}').title().strip()
-        if type(string_var) == str and string_var.isalpha():
+        if isinstance(string_var, str) and string_var.isalpha():
             return string_var
         else:
             print('Invalid.')

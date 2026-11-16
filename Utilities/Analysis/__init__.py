@@ -1,9 +1,9 @@
 def double(a):
-    return a ** 2
+    return a**2
 
 
 def triple(a):
-    return a ** 3
+    return a**3
 
 
 def half(a):
